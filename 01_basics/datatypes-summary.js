@@ -31,14 +31,39 @@ let myFunc = function(){
     console.log("Hello World");
 }
 
-console.log(typeof(scrore));
-console.log(typeof(scoreValue));
-console.log(typeof(isLoggedIn));
-console.log(typeof(outsidetemp));
-console.log(typeof(id));
-console.log(typeof(anotherId));
-console.log(typeof(userEmail));
-console.log(typeof(bigNumber));
-console.log(typeof(heroes));
-console.log(typeof(myObj));
-console.log(typeof(myFunc));
+// console.log(typeof(scrore));
+// console.log(typeof(scoreValue));
+// console.log(typeof(isLoggedIn));
+// console.log(typeof(outsidetemp));
+// console.log(typeof(id));
+// console.log(typeof(anotherId));
+// console.log(typeof(userEmail));
+// console.log(typeof(bigNumber));
+// console.log(typeof(heroes));
+// console.log(typeof(myObj));
+// console.log(typeof(myFunc));
+
+// +++++++++++++++++++++++++++++++ Stack and Heap memory +++++++++++++++++++++++++++++++++
+
+// Stack (primitive), Heap (non-primitive)
+
+let myName = "Rahul";
+
+let anotherName = myName;
+
+anotherName = "Raghav";
+
+console.log(myName);
+console.log(anotherName);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@sbi"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "rahul@google.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
