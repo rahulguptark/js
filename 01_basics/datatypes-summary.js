@@ -67,3 +67,4 @@ userTwo.email = "rahul@google.com";
 
 console.log(userOne.email);
 console.log(userTwo.email);
+console.log(userOne.upi);
